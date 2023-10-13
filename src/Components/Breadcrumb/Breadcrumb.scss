@@ -1,0 +1,35 @@
+.breadcrumbWidget {
+
+    .breadcrumbItem {
+        font-size: 13px;
+        color: #999;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+
+
+        svg {
+            margin-right: 5px;
+        }
+
+        &:last-child {
+            font-weight: 700;
+            color: #333;
+            cursor: default;
+            pointer-events: none;
+            cursor: default;
+
+
+            svg {
+                display: none;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+
+        }
+    }
+}

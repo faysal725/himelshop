@@ -1,0 +1,26 @@
+.search-mobile {
+    padding: 20px 10px 10px 10px;
+
+
+    &-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &-list {
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+
+        &-item {
+            display: inline-block;
+            padding: 5px 14px;
+            font-size: 12px;
+            background-color: #ffffff;
+            color: #111;
+            text-align: center;
+            border-radius: 25px;
+        }
+    }
+}

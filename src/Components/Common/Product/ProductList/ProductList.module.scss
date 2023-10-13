@@ -1,0 +1,57 @@
+@import '../../../../assets/styles/mixin/mixin';
+
+.productList {
+    @include flex;
+    margin-bottom: 7px;
+}
+
+.productListImage {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: rgba(0, 0, 0, .04);
+        border-radius: .213rem;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.productListInfo {
+    .name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        margin-top: 0.107rem;
+        font-size: 11px;
+        color: rgba(0, 0, 0, 0.87);
+        word-break: break-word;
+        margin-bottom: 0;
+
+        .fsLabel {
+            letter-spacing: 0.01rem;
+            -webkit-text-stroke: 0.01rem #fff;
+            font-size: xx-small;
+            color: #fff;
+            background: linear-gradient(90deg, #ff6e26, #ff4633);
+            border-radius: 0.027rem;
+            padding: 0 3px;
+            margin-right: 2px;
+        }
+    }
+
+    h2 {
+        color: #333;
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 700;
+    }
+}

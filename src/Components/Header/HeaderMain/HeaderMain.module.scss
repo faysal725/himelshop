@@ -1,0 +1,146 @@
+@import '../../../assets/styles/variables';
+
+.headerSearch {
+    display: flex;
+    height: 38px;
+    width: 100%;
+}
+
+.headerLogo {
+    text-decoration: none;
+    display: block;
+
+    img {
+        height: 50px;
+        width: 100%;
+    }
+}
+
+.headerInput {
+    background-color: white;
+    letter-spacing: 0.025em;
+    font-weight: 500;
+    font-size: 0.875rem;
+    height: 100%;
+    width: 100%;
+    padding: 0px 17px;
+    border-radius: 30px 0px 0px 30px;
+    outline: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.button {
+    background: $primary;
+    color: white;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 2px solid green;
+    border-radius: 25px;
+    padding: 0 15px;
+    cursor: pointer;
+
+    .profile{
+        background: white;
+        position: absolute;
+        border-radius: 10px;
+        overflow: hidden;
+        top: 45px;
+        right: 0;
+        width: 150px;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+
+            a{
+                padding: 10px 15px;
+                cursor: pointer;
+                color: black;
+
+                &:hover{
+                    background: #ff8000;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.userIcon {
+    font-size: 35px;
+    margin-right: 3px;
+
+}
+
+.userInfo {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: $primary;
+    }
+
+    span {
+        display: block;
+        font-size: 13px;
+
+        &:nth-child(1) {
+            color: #ffffff99;
+        }
+
+        &:nth-child(2) {
+            font-weight: 600;
+        }
+    }
+}
+
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart {
+    color: #fff;
+    position: relative;
+
+    &:hover {
+        color: #fff;
+    }
+
+    .cartIcon {
+        font-size: 35px;
+    }
+
+    .cartItem {
+        background-color: $primary;
+        position: absolute;
+        width: 27px;
+        height: 20px;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -7px;
+        left: 19px;
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixin/mixin';
+
+.headerMenu {
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    margin-top: 5px;
+}
+
+
+
+.links {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    .linkItem {
+        margin-right: 15px;
+
+        .link {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            @include transition;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.phoneNumber {
+    text-align: right;
+
+    svg {
+        margin-right: 5px;
+        transition: all 0.6s;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: right;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $primary;
+
+            svg {
+                margin-right: 0px;
+            }
+        }
+
+
+    }
+}

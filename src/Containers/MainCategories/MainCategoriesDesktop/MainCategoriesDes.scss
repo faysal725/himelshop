@@ -1,0 +1,23 @@
+.mainCategories {
+    background: #fff;
+}
+
+.mainCategoryItem {
+    border: 2px solid green;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.mainCategoryBanner {
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    margin: 25px 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

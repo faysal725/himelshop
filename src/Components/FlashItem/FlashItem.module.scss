@@ -1,0 +1,108 @@
+@import "../../assets/styles/variables";
+
+.FlashItem {
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    display: block;
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: $primary;
+    }
+}
+
+.FlashItemImage {
+    position: relative;
+
+}
+
+.FlashItemContext {
+    padding: 10px;
+}
+
+.FlashItemSales {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $primary;
+    color: #fff;
+    width: 45px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: -10px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #ef9721;
+        border-bottom: 10px solid transparent;
+    }
+}
+
+.FlashItemName {
+    font-size: 11px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.FlashItemPriceAndSolid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .FlashItemPrice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+
+        .price {
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .previousPrice {
+            text-decoration: line-through;
+            font-size: 10px;
+            color: #555;
+        }
+    }
+
+    .FlashItemSolid {
+        font-size: 10px;
+        color: gray;
+    }
+}
+
+.stock {
+    margin-top: 15px;
+    text-align: center;
+
+
+    .stockBar {
+        width: 100%;
+        height: 17px;
+        border-radius: 25px;
+        background-color: #c3c3c3;
+    }
+
+    .stockLevel {
+        border-radius: 25px;
+        height: 100%;
+        background-color: $primary;
+        color: #fff;
+        width: 78%;
+        font-size: 11px;
+        line-height: 17px;
+    }
+}

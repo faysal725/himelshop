@@ -1,0 +1,159 @@
+@import '../../../assets/styles/mixin/mixin';
+@import '../../../assets/styles/variables';
+
+
+.headerSliderContainer {
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-top: 16px;
+        height: 462px;
+        border-radius: 4px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .swiper-button-prev {
+        left: 0px;
+        right: auto;
+        background: #6f4444c7;
+        width: 45px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: none;
+        @include transition;
+
+        &::after {
+            font-size: 14px;
+            font-weight: 900;
+            color: #b9b9b9;
+        }
+
+        &:hover {
+            background: #000000d1;
+
+            &::after {
+                color: #fff;
+            }
+        }
+    }
+
+    .swiper-button-next {
+        right: 0;
+        left: auto;
+        width: 45px;
+        background: #6f4444c7;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: none;
+        @include transition;
+
+        &::after {
+            font-size: 14px;
+            font-weight: 900;
+            color: #b9b9b9;
+        }
+
+        &:hover {
+            background: #000000d1;
+
+            &::after {
+                color: #fff;
+            }
+        }
+    }
+
+    &:hover {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: flex;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        margin: 0 6px;
+        background: #fff;
+        width: 6px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 4px;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $primary;
+        height: 14px;
+    }
+
+}
+
+
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {
+    .headerSliderContainer {
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-top: 8px;
+        }
+
+        &:hover {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+
+        .swiper-container-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .headerSliderContainer {
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-top: 8px;
+        }
+
+        &:hover {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

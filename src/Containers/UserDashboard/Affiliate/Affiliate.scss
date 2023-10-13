@@ -1,0 +1,43 @@
+.address-table {
+    width: 100%;
+    border: 1px solid rgb(168, 166, 166);
+    background: #dee2e62e;
+    text-align: center;
+
+    thead {
+        background: #e2e6e9;
+        border-bottom: 1px solid rgb(168, 166, 166);
+
+        tr {
+            th {
+                padding: 10px;
+            }
+        }
+    }
+
+    tbody {
+
+        th,
+        td {
+            padding: 12px;
+        }
+    }
+
+}
+
+.balance {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+
+    .balance-item {
+        margin-right: 10px;
+        padding-left: 7px;
+        border-left: 3px solid #ef9721;
+
+        p {
+            font-size: 13px;
+        }
+    }
+}

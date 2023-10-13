@@ -1,0 +1,302 @@
+.about-us {
+    background: #fff;
+
+    .vertical-timeline-element-date {
+        left: 87% !important;
+        color: #fff;
+        opacity: 1 !important;
+    }
+
+    .vertical-timeline-element-content {
+        box-shadow: none !important;
+    }
+}
+
+.remove-border {
+    .container {
+
+        >div {
+            border-top: none !important;
+        }
+    }
+}
+
+.about-topmt {
+    position: relative;
+    height: 500px;
+    background: url('https://s.staticbg.com/web/src/img/aboutbg/about2109_bg.jpg?v=d2ef807') no-repeat 50%;
+    text-align: center;
+    background-size: 100%;
+
+    .slide-top {
+        -webkit-animation: slide-top .7s cubic-bezier(.25, .46, .45, .94) both;
+        animation: slide-top .7s cubic-bezier(.25, .46, .45, .94) both;
+    }
+
+    .animated {
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .title {
+        margin: 0 auto;
+        font-size: 48px;
+        line-height: 65px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-top: 60px;
+        text-align: center;
+        justify-content: center !important;
+    }
+}
+
+.about-bg {
+    background: #f7f8fa;
+}
+
+.about-bg2 {
+    background: #fe6d27;
+}
+
+.about-logistics {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+
+}
+
+.decs {
+    max-width: 960px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 26px auto 0;
+    color: #666;
+    text-align: left;
+
+}
+
+.bg {
+    background: #ebedf2;
+    height: 400px;
+    position: relative;
+
+    .desc {
+        max-width: 1200px;
+        font-size: 0;
+        line-height: 26px;
+        margin: 46px auto 0;
+        color: #fff;
+        text-align: left;
+        position: relative;
+    }
+
+    .left {
+        width: 636px;
+        height: 358px;
+        background: #ff6e26;
+        position: absolute;
+        top: 21px;
+        left: 0;
+        z-index: 1;
+
+
+        li {
+            margin: 40px 80px;
+
+            p {
+                font-size: 60px;
+                text-transform: uppercase;
+                position: relative;
+                z-index: 2;
+                color: #fff;
+                line-height: 65px;
+                font-weight: bold;
+
+                em {
+                    display: block;
+                }
+            }
+
+            .bg-text {
+                position: absolute;
+                left: 86px;
+                top: 45px;
+                color: #ff6e26;
+                z-index: 1;
+                text-shadow: 0 0 2px #fff;
+            }
+        }
+    }
+
+    .right {
+        width: 595px;
+        height: 400px;
+        background: url('https://s.staticbg.com/web/src/img/aboutbg/about2109_meet.jpg?v=00f7177') no-repeat 50%;
+        position: absolute;
+        right: 0;
+    }
+
+    ul {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {
+    .about-title {
+        padding: 50px 0 5px;
+        font-size: 19px;
+    }
+
+    .about-topmt {
+        height: 250px;
+        background: url('https://s.staticbg.com/web/src/img/aboutbg/about2109_bg.jpg?v=d2ef807') no-repeat 50%;
+        text-align: center;
+        background-size: cover;
+
+        .title {
+            font-size: 21px;
+            line-height: 60px;
+            padding-top: 10px;
+        }
+    }
+
+    .bg {
+        .left {
+            width: 100%;
+            height: 358px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            li {
+                margin: 5px 10px;
+
+                p {
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+
+                .bg-text {
+                    position: absolute;
+                    left: 10px;
+                    top: 49%;
+                    color: #ff6e26;
+                    z-index: 1;
+                    text-shadow: 0 0 2px #fff;
+                    transform: translateY(-100%);
+                }
+            }
+
+        }
+    }
+
+    .remove-border {
+        .container {
+
+            >div {
+                justify-content: center !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about-title {
+        padding: 50px 0 5px;
+        font-size: 19px;
+    }
+
+    .about-topmt {
+        height: 250px;
+        background: url('https://s.staticbg.com/web/src/img/aboutbg/about2109_bg.jpg?v=d2ef807') no-repeat 50%;
+        text-align: center;
+        background-size: cover;
+
+        .title {
+            font-size: 21px;
+            line-height: 60px;
+            padding-top: 10px;
+        }
+    }
+
+    .bg {
+        .left {
+            width: 100%;
+            height: 358px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            li {
+                margin: 5px 10px;
+
+                p {
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+
+                .bg-text {
+                    position: absolute;
+                    left: 10px;
+                    top: 49%;
+                    color: #ff6e26;
+                    z-index: 1;
+                    text-shadow: 0 0 2px #fff;
+                    transform: translateY(-100%);
+                }
+            }
+
+        }
+    }
+
+    .remove-border {
+        .container {
+
+            >div {
+                justify-content: center !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about-topmt {
+        height: 300px;
+        background: url('https://s.staticbg.com/web/src/img/aboutbg/about2109_bg.jpg?v=d2ef807') no-repeat 50%;
+        text-align: center;
+        background-size: cover;
+
+        .title {
+            font-size: 21px;
+            line-height: 60px;
+            padding-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

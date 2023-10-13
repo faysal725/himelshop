@@ -1,0 +1,29 @@
+.edit-address-wrapper {
+    .form-label {
+        font-weight: 600;
+    }
+
+    #isBilling {
+        height: 19px;
+        width: 19px;
+        margin-top: 2px;
+    }
+
+    .form {
+        &-control {
+            font-size: 14px;
+        }
+
+        &-select {
+            font-size: 14px;
+        }
+    }
+
+    .address-btn-wrapper {
+        .active {
+            background: #ef9721;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    }
+}

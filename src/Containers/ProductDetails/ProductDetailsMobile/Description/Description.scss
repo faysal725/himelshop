@@ -1,0 +1,120 @@
+.description {
+    margin-top: 5px;
+    background: #fff;
+    font-size: 13px;
+
+    .seeAllDescription {
+        position: relative;
+        padding-bottom: 10px;
+
+
+        .rightArrow {
+            position: absolute;
+            top: 30%;
+            right: 25px;
+            transform: translate(50%, -50%);
+            font-size: 21px;
+            color: #9e9e9e;
+        }
+    }
+}
+
+.review {
+    margin-top: 5px;
+    background: #fff;
+    font-size: 13px;
+    padding: 10px 0;
+
+    .reviewTitle {
+        display: flex;
+        justify-content: space-between;
+
+        .reviewRating {
+            .rightArrow {
+                font-size: 20px;
+                color: #666;
+            }
+        }
+    }
+
+    .reviewList {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 0;
+
+        .reviewListItem {
+            background: #f5f6f7;
+            padding: 6px 7px;
+            border-radius: 15px;
+            margin-right: 6px;
+            font-size: 11px;
+
+            span {
+                font-weight: 700;
+                margin-left: 3px;
+            }
+        }
+    }
+
+
+    .reviewItem {
+        margin-bottom: 10px;
+
+        .reviewPerson {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .name {
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+
+        .word {
+            display: flex;
+            align-items: center;
+
+            .span {
+                display: inline-block;
+                margin-left: 5px;
+                border-left: 1px solid #dadada;
+                padding-left: 5px;
+            }
+        }
+
+        .comment {
+            margin-top: 8px;
+        }
+    }
+
+}
+
+.questionAndAnswer {
+    margin-top: 5px;
+    background: #fff;
+    font-size: 13px;
+    padding: 10px 0;
+    text-align: center;
+
+    h6 {
+        text-align: left;
+    }
+
+
+    button {
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-weight: 600;
+        text-align: center;
+        width: 170px;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+}

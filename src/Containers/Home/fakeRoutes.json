@@ -1,0 +1,297 @@
+{
+    "categories": [
+        {
+            "_id": "607dec141babfc29e4e5fd0d",
+            "name": "Electronic",
+            "slug": "electronic",
+            "children": [
+                {
+                    "_id": "60945599936fb52d34632a2a",
+                    "name": "Mobile",
+                    "slug": "mobile",
+                    "parentId": "607dec141babfc29e4e5fd0d",
+                    "children": [
+                        {
+                            "_id": "60a03d6ce1aee40d088769bf",
+                            "name": "Samsung",
+                            "slug": "samsung",
+                            "parentId": "60945599936fb52d34632a2a",
+                            "children": []
+                        },
+                        {
+                            "_id": "60a03d9fe1aee40d088769c0",
+                            "name": "iPhone",
+                            "slug": "iphone",
+                            "parentId": "60945599936fb52d34632a2a",
+                            "children": []
+                        },
+                        {
+                            "_id": "60a03dbfe1aee40d088769c1",
+                            "name": "Vivo",
+                            "slug": "vivo",
+                            "parentId": "60945599936fb52d34632a2a",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c61adc4b7931b0b2bd9e",
+                            "name": "Realme",
+                            "slug": "realme",
+                            "parentId": "60945599936fb52d34632a2a",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c62bdc4b7931b0b2bd9f",
+                            "name": "Techno",
+                            "slug": "techno",
+                            "parentId": "60945599936fb52d34632a2a",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c650dc4b7931b0b2bda0",
+                            "name": "Redmi",
+                            "slug": "Redmi",
+                            "parentId": "60945599936fb52d34632a2a",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "_id": "60a03d2fe1aee40d088769bd",
+                    "name": "Camera & Accessories",
+                    "slug": "cameras-accessories",
+                    "parentId": "607dec141babfc29e4e5fd0d",
+                    "children": [
+                        {
+                            "_id": "60e6c6d2dc4b7931b0b2bda2",
+                            "name": "bluetooth Speakers",
+                            "slug": "bluetooth Speakers",
+                            "parentId": "60a03d2fe1aee40d088769bd",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "_id": "60a03d5de1aee40d088769be",
+                    "name": "Gaming",
+                    "slug": "gaming",
+                    "parentId": "607dec141babfc29e4e5fd0d",
+                    "children": []
+                },
+                {
+                    "_id": "60a043a5e1aee40d088769c5",
+                    "name": "Laptop",
+                    "slug": "laptop",
+                    "parentId": "607dec141babfc29e4e5fd0d",
+                    "children": []
+                },
+                {
+                    "_id": "60e6c387dc4b7931b0b2bd8f",
+                    "name": "3D Printer & Supplies",
+                    "slug": "3D-Printer-Supplies",
+                    "parentId": "607dec141babfc29e4e5fd0d",
+                    "children": [
+                        {
+                            "_id": "60e6c3b2dc4b7931b0b2bd90",
+                            "name": "3D Printer",
+                            "slug": "3DPrinter",
+                            "parentId": "60e6c387dc4b7931b0b2bd8f",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c3f4dc4b7931b0b2bd91",
+                            "name": "3D Printer Pen",
+                            "slug": "3D-Printer-Pen",
+                            "parentId": "60e6c387dc4b7931b0b2bd8f",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c41bdc4b7931b0b2bd92",
+                            "name": "3D Printer Accessories",
+                            "slug": "3DPrinterAccessories",
+                            "parentId": "60e6c387dc4b7931b0b2bd8f",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c448dc4b7931b0b2bd93",
+                            "name": "3D Printer Module Board",
+                            "slug": "3D-Printer-Module-Board",
+                            "parentId": "60e6c387dc4b7931b0b2bd8f",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "_id": "60e6c494dc4b7931b0b2bd94",
+                    "name": "Module Board",
+                    "slug": "Module Board",
+                    "parentId": "607dec141babfc29e4e5fd0d",
+                    "children": [
+                        {
+                            "_id": "60e6c4b9dc4b7931b0b2bd95",
+                            "name": "Board & Shield",
+                            "slug": "Board & Shield",
+                            "parentId": "60e6c494dc4b7931b0b2bd94",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c4d3dc4b7931b0b2bd96",
+                            "name": "Motherboard & Development Board",
+                            "slug": "Motherboard & Development Board",
+                            "parentId": "60e6c494dc4b7931b0b2bd94",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c4eadc4b7931b0b2bd97",
+                            "name": "Smart Module",
+                            "slug": "Smart Module",
+                            "parentId": "60e6c494dc4b7931b0b2bd94",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c50ddc4b7931b0b2bd99",
+                            "name": "Power Supply Module",
+                            "slug": "Power Supply Module",
+                            "parentId": "60e6c494dc4b7931b0b2bd94",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c538dc4b7931b0b2bd9b",
+                            "name": "Expansion Board & Shield",
+                            "slug": "Expansion Board & Shield",
+                            "parentId": "60e6c494dc4b7931b0b2bd94",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c54ddc4b7931b0b2bd9c",
+                            "name": "Relay Module",
+                            "slug": "Relay Module",
+                            "parentId": "60e6c494dc4b7931b0b2bd94",
+                            "children": []
+                        },
+                        {
+                            "_id": "60e6c55ddc4b7931b0b2bd9d",
+                            "name": "Test & Measuring Module",
+                            "slug": "Test & Measuring Module",
+                            "parentId": "60e6c494dc4b7931b0b2bd94",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "_id": "60e6c6a1dc4b7931b0b2bda1",
+                    "name": "Headphones & Speakers",
+                    "slug": "Headphones & Speakers",
+                    "parentId": "607dec141babfc29e4e5fd0d",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "_id": "607ded031babfc29e4e5fd0f",
+            "name": "Sports, Books, More",
+            "slug": "sports-books-more",
+            "children": []
+        },
+        {
+            "_id": "60a03cdfe1aee40d088769bb",
+            "name": "Fashion",
+            "slug": "Fashion",
+            "children": [
+                {
+                    "_id": "60a04055e1aee40d088769c2",
+                    "name": "Men",
+                    "slug": "men",
+                    "parentId": "60a03cdfe1aee40d088769bb",
+                    "children": []
+                },
+                {
+                    "_id": "60a04073e1aee40d088769c3",
+                    "name": "Women",
+                    "slug": "women",
+                    "parentId": "60a03cdfe1aee40d088769bb",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "_id": "60a03cf3e1aee40d088769bc",
+            "name": "Home",
+            "slug": "home",
+            "children": []
+        },
+        {
+            "_id": "60e6c1efdc4b7931b0b2bd84",
+            "name": "Men's Clothing",
+            "slug": "Men'sClothing",
+            "children": [
+                {
+                    "_id": "60e6c4fadc4b7931b0b2bd98",
+                    "name": "Sensor & Detector Module",
+                    "slug": "Sensor & Detector Module",
+                    "parentId": "60e6c1efdc4b7931b0b2bd84",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "_id": "60e6c23ddc4b7931b0b2bd85",
+            "name": "Phones & Accessories",
+            "slug": "Phones-Accessories",
+            "children": []
+        },
+        {
+            "_id": "60e6c255dc4b7931b0b2bd86",
+            "name": "Tools, Industrial & Scientific",
+            "slug": "Tools-Industrial-Scientific",
+            "children": []
+        },
+        {
+            "_id": "60e6c283dc4b7931b0b2bd87",
+            "name": "Toys Hobbies and Robot",
+            "slug": "Toys-Hobbies-and-Robot",
+            "children": []
+        },
+        {
+            "_id": "60e6c299dc4b7931b0b2bd88",
+            "name": "Computers & Office",
+            "slug": "ComputersOffice",
+            "children": []
+        },
+        {
+            "_id": "60e6c2addc4b7931b0b2bd89",
+            "name": "Automobiles & Motorcycles",
+            "slug": "Automobiles-otorcycles",
+            "children": []
+        },
+        {
+            "_id": "60e6c2bbdc4b7931b0b2bd8a",
+            "name": "Sports & Outdoor",
+            "slug": "Sports -Outdoor",
+            "children": []
+        },
+        {
+            "_id": "60e6c2d8dc4b7931b0b2bd8b",
+            "name": "Home,  Garden  &  Furniture",
+            "slug": "HomeGardenFurniture",
+            "children": []
+        },
+        {
+            "_id": "60e6c2f2dc4b7931b0b2bd8c",
+            "name": "ewelry  &  Watches",
+            "slug": "ewelry-Watches",
+            "children": []
+        },
+        {
+            "_id": "60e6c308dc4b7931b0b2bd8d",
+            "name": "Home Appliances",
+            "slug": "Home-Appliances",
+            "children": []
+        },
+        {
+            "_id": "60e6c31cdc4b7931b0b2bd8e",
+            "name": "Shoes  &  Bags",
+            "slug": "Shoes-Bags",
+            "children": []
+        }
+    ]
+}

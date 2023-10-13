@@ -1,0 +1,32 @@
+.header-buttons {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 2.8rem;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    width: 100%;
+
+    button {
+        width: 50%;
+        height: 100%;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        background: #fa0;
+        border: none;
+
+        &:last-child {
+            background: -webkit-gradient(linear, left top, right top, from(#ff6e26), to(#ff4633));
+            background: linear-gradient(90deg, #ff6e26, #ff4633);
+        }
+    }
+
+}

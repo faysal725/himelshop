@@ -1,0 +1,47 @@
+.order-summery {
+    margin-top: 16px;
+
+    li {
+        color: #333;
+        position: relative;
+        line-height: 25px;
+        font-weight: 600;
+
+        .text {
+            color: #333;
+            line-height: 19px;
+            position: relative;
+        }
+
+        .money {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .subTotal {
+        margin-top: 10px;
+        padding-top: 15px;
+        border-top: 1px solid #ebedf0;
+        line-height: 30px;
+    }
+
+    .total {
+        margin-top: 10px;
+        padding-top: 15px;
+        border-top: 1px solid #ebedf0;
+        line-height: 30px;
+        font-weight: 700;
+        font-size: 18px
+    }
+
+
+}
+
+.order-process-btn {
+    display: block;
+    height: 40px;
+    color: #fff;
+    margin-top: 15px;
+    width: 100%;
+}

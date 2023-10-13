@@ -1,0 +1,27 @@
+@import '../../../assets/styles/variables';
+
+.headerTop {
+    height: 30px;
+}
+
+.headerLinks {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.headerLink {
+    margin-left: 15px;
+}
+
+.headerLinkItem {
+    text-decoration: none;
+    color: #ffffff99;
+    font-size: 12px;
+
+    &:hover {
+        color: $primary;
+    }
+}

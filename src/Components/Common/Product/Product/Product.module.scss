@@ -1,0 +1,163 @@
+@import '../../../../assets/styles/variables';
+
+.product {
+    text-decoration: none;
+    color: #656d78;
+}
+
+.productImg {
+    padding: 18px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    color: #656d78;
+    text-decoration: none;
+    outline: none;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .04);
+        border-radius: 4px;
+        -webkit-transition: background .3s;
+        transition: background .3s;
+    }
+
+    &:hover::after {
+        background: rgba(0, 0, 0, .08);
+        -webkit-transition: background .3s;
+        transition: background .3s;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+.productPrice {
+    display: flex;
+    padding: 3px 3px;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+
+    .price {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .previousPrice {
+        margin-left: 6px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 4px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #000000;
+            transform: rotate(347deg);
+        }
+    }
+
+    .off {
+        background: $primary;
+        margin-left: 5px;
+        font-size: 7px;
+        margin-top: 4px;
+        border-radius: 12px;
+        padding: 1px 2px;
+        color: #fff;
+
+    }
+
+}
+
+.productName {
+    height: 18px;
+    padding: 0 3px;
+    text-align: center;
+
+    span {
+        display: block;
+        color: #999;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {
+    .productImg {
+        padding: 3px;
+    }
+
+    .productPrice {
+        display: block;
+        text-align: center;
+
+        .price {
+            font-size: 13px;
+        }
+
+        .off {
+            display: none;
+        }
+
+        .previousPrice {
+            display: none;
+        }
+    }
+
+    .productName {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .productPrice {
+        display: block;
+        text-align: center;
+
+        .price {
+            font-size: 14px;
+        }
+
+        .off {
+            display: none;
+        }
+
+        .previousPrice {
+            display: none;
+        }
+    }
+
+    .productName {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

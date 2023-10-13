@@ -1,0 +1,170 @@
+#desktopReview {
+    padding: 1.5rem;
+}
+
+.writeAReview {
+    p {
+        margin-top: 15px;
+        color: gray;
+    }
+}
+
+.writeReviewBtn {
+    text-transform: none;
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    background: #f25f1f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+        background: #f15715;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .writeReviewBtn {
+            width: 170px;
+        }
+    }
+}
+
+.customerReviews {
+    border-right: 1px solid #ebedf0;
+    height: 100%;
+
+    .rate {
+        display: inline-block;
+        margin-bottom: 5px;
+
+        strong {
+            font-size: 30px;
+        }
+    }
+
+    .seeAll {
+        font-size: 12px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+
+.ratingListWrapper {
+    border-right: 1px solid #ebedf0;
+    height: 100%;
+
+    .ratingList {
+        dd {
+            .startProgress {
+                width: 205px;
+            }
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                .startProgress {
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+
+.preventNone {
+    // pointer-events: none;
+}
+
+.allStar {
+    position: relative;
+    // pointer-events: none;
+
+    >span {
+        width: 167px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    &:hover {
+        ul {
+            display: block;
+        }
+    }
+
+    ul {
+        position: absolute;
+        top: 25px;
+        -webkit-box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+        box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+        border: 1px solid #ebedf0;
+        border-radius: 2px;
+        background: #fff;
+        display: none;
+        z-index: 1;
+        min-width: 118px;
+        padding: 7px 0 8px;
+
+        li {
+            height: 36px;
+            line-height: 30px;
+            padding: 3px 20px;
+            white-space: nowrap;
+            color: #333;
+            font-weight: 400;
+            font-size: 13px;
+
+            .starItem {
+                margin: 0 4px;
+                color: #999;
+                font-style: normal;
+            }
+
+            &:hover {
+                background: #f2f2f2;
+            }
+        }
+
+        .startList {
+            svg {
+                color: #ff6e26;
+            }
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 7px solid rgba(0, 0, 0, 0);
+            border-right-color: #ebebf0;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            top: -14px;
+            margin-left: -7px;
+            left: 50%;
+        }
+
+        &::after {
+            border-color: rgba(0, 0, 0, 0) #fff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+            top: -13px;
+        }
+    }
+}
+
+.tabsWrapper {
+    position: relative;
+
+    .pushRight {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 175px;
+    }
+}

@@ -1,0 +1,55 @@
+.box-item {
+    padding: 10px 8px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 40px;
+    background: #dee2e62e;
+    height: 100%;
+
+
+
+    .edit-action {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 30px;
+        width: 30px;
+        background: #1cb891;
+        color: #fff;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .edit-icon {
+            font-size: 18px
+        }
+    }
+
+    .user-info {
+
+        >span {
+            font-weight: 600;
+        }
+
+        .user-info-item {
+            font-weight: 600;
+
+            span {
+
+                margin-right: 10px;
+            }
+
+            a {
+                color: #333;
+            }
+        }
+
+        .newsletter {
+            color: #1cb891;
+        }
+    }
+
+}

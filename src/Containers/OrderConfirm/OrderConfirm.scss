@@ -1,0 +1,275 @@
+@import '../../assets/styles/variables';
+
+.order-title {
+    color: $primary;
+    font-size: 30px;
+    text-align: center;
+
+    svg {
+        margin-right: 10px;
+        margin-top: -3px;
+    }
+}
+
+.print {
+    font-weight: 600;
+
+    svg {
+        font-size: 18px;
+    }
+}
+
+.order-subTitle {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.cash-on-delivery {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+    font-weight: 600;
+    color: #444;
+}
+
+.order-summery-wrapper {
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+
+    .list-item {
+        padding: 10px 15px;
+    }
+
+    .order-summery {
+        margin-top: 16px;
+
+
+        li {
+            color: #333;
+            position: relative;
+            line-height: 25px;
+            font-weight: 600;
+            padding-left: 15px;
+            margin-right: 15px;
+
+            .text {
+                color: #333;
+                line-height: 19px;
+                position: relative;
+            }
+
+            .money {
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        .subTotal {
+            margin-top: 10px;
+            padding-top: 15px;
+            border-top: 1px solid #ebedf0;
+            line-height: 30px;
+        }
+
+        .total {
+            margin-top: 10px;
+            padding-top: 15px;
+            border-top: 1px solid #ebedf0;
+            line-height: 30px;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+
+    }
+}
+
+.order-summeryTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c1c1c1;
+    padding: 10px 15px;
+
+
+    span {
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+.order-summery-wrapper {
+    .order-summery-ul {
+        margin-top: 20px;
+
+
+        .main {
+            position: relative;
+            padding: 0px 65px 0 139px;
+
+
+            .img {
+
+                width: 131px;
+                height: 80px;
+                overflow: hidden;
+                border-radius: 8px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                text-align: center;
+
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        max-height: 128px;
+                        position: relative;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, .04);
+                    }
+                }
+            }
+
+            .info {
+                position: relative;
+                min-height: 128px;
+
+                .title {
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 19px;
+                    width: 100%;
+                    display: inline-block;
+                }
+
+
+            }
+
+            .option {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+
+                .quantity {
+                    height: 28px;
+                    line-height: 28px;
+                    text-align: right;
+                    display: block;
+
+                }
+
+
+            }
+
+        }
+    }
+}
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {
+    .order-summery-wrapper {
+        .order-summery-ul {
+            margin-top: 20px;
+
+
+            .main {
+                position: relative;
+                padding: 0px 0 0 85px;
+
+
+                .img {
+                    width: 75px;
+                    height: 75px;
+
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            max-height: 128px;
+                            position: relative;
+                            top: 50%;
+                            -webkit-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            width: 75px;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, .04);
+                        }
+                    }
+                }
+
+                .info {
+                    position: relative;
+                    min-height: 105px;
+
+                    .title {
+                        font-size: 14px;
+                        color: #333;
+                        line-height: 19px;
+                        width: 100%;
+                        display: inline-block;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+
+                }
+
+                .option {
+                    position: absolute;
+                    right: 0;
+                    top: 38px;
+                    height: 100%;
+                    left: 31%;
+
+
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

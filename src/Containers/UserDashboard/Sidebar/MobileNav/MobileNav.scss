@@ -1,0 +1,49 @@
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &:focus,
+        &:active,
+        &visited {
+            .mobile-nav-item-box {
+                background-color: #ff4733;
+                border: 2px solid #ff4733;
+            }
+        }
+
+
+        &-box {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #f1971f;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1971f;
+
+
+            &-icon {
+                font-size: 35px;
+                color: #fff;
+            }
+        }
+
+        &-title {
+            font-size: 9px;
+            text-align: center;
+            margin-top: 5px;
+            color: #333;
+        }
+
+    }
+}

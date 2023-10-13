@@ -1,0 +1,30 @@
+@import './mixin/mixin';
+
+.himel-shop {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 60px;
+
+    span {
+        color: $primary;
+    }
+}
+
+.custom-button {
+    position: relative;
+    display: block;
+    border-radius: 4px;
+    background: #f25f1f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    @include transition;
+
+    &:hover {
+        background: #f15715;
+    }
+}

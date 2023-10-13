@@ -1,0 +1,40 @@
+@import '../../../../assets/styles/variables';
+
+.relatedCategory {
+    h6 {
+        height: 19px;
+        line-height: 19px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #333;
+    }
+}
+
+.category {
+    height: 19px;
+    line-height: 19px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    padding-left: 8px;
+}
+
+.subCategories {
+    padding-left: 0;
+
+    .subCategoryItem {
+        a {
+            color: #666;
+            padding-left: 12px;
+            position: relative;
+            display: inline-block;
+            font-size: 13px;
+            margin-bottom: 5px;
+
+            &:hover {
+                text-decoration: underline;
+                color: $primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.MobCategoryHeader {
+    background: #2f2f42;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 1111;
+    transition: height 0.3s;
+    overflow: hidden;
+    color: #fff;
+
+
+
+    .headerWrapper {
+        padding: 8px 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+    }
+
+    .leftArrow {
+        color: #fff;
+        font-size: 21px;
+        margin-right: 10px;
+    }
+
+    .bars {
+        font-size: 23px;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    .searchBox {
+        display: flex;
+        border-radius: 5px;
+        padding: 4px 0px;
+        transition: all 0.25s;
+        transform-origin: center right;
+        width: 70%;
+        align-items: center;
+        background: #fff;
+
+        .searchIcon {
+            margin-right: 7px;
+            margin-left: 8px;
+            margin-top: 3px;
+            font-size: 18px;
+            color: #333;
+
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 13px;
+        }
+    }
+
+    .cart {
+        color: #fff;
+        font-size: 18px;
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+}

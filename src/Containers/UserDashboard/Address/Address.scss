@@ -1,0 +1,36 @@
+.address-wrapper {
+    .edit-address {
+        color: #1cb891;
+        font-size: 13px;
+        text-align: right;
+        margin-bottom: 7px;
+        cursor: pointer;
+    }
+}
+
+.address-table {
+    width: 100%;
+    border: 1px solid rgb(168, 166, 166);
+    background: #dee2e62e;
+    text-align: center;
+
+    thead {
+        background: #e2e6e9;
+        border-bottom: 1px solid rgb(168, 166, 166);
+
+        tr {
+            th {
+                padding: 10px;
+            }
+        }
+    }
+
+    tbody {
+
+        th,
+        td {
+            padding: 12px;
+        }
+    }
+
+}

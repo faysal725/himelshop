@@ -1,0 +1,271 @@
+.cardComponent {
+    .title {
+        font-weight: bold;
+    }
+
+    a {
+        color: #333;
+
+        &:hover {
+            color: #ff6e26;
+        }
+    }
+}
+
+
+
+.listBlock {
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 20px 24px;
+    padding-top: 10px;
+
+
+
+    .list-ul {
+        margin-top: 20px;
+
+        .main {
+            position: relative;
+            padding: 0 132px 0 150px;
+
+            .img {
+                width: 128px;
+                height: 128px;
+                overflow: hidden;
+                border-radius: 8px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                text-align: center;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        max-height: 128px;
+                        position: relative;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, .04);
+                    }
+                }
+            }
+
+            .info {
+                position: relative;
+                min-height: 128px;
+
+                .title {
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 19px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                .poa {
+                    margin-top: 6px;
+                    position: relative;
+
+                    .poa-title {
+                        height: 28px;
+                        line-height: 28px;
+                        border-radius: 8px;
+                        background: #f5f6f8;
+                        padding: 0 24px 0 8px;
+                        font-size: 13px;
+                        color: #666;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        display: inline-block;
+                        max-width: 200px;
+                        position: relative;
+                        cursor: pointer;
+                        -webkit-transition: .3s;
+                        transition: .3s;
+                    }
+                }
+
+                .bot {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    line-height: 18px;
+                    font-size: 12px;
+                    color: #333;
+
+                    .price {
+                        line-height: 22px;
+                        font-size: 16px;
+                        color: #333;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+
+            .option {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+
+                .quantity {
+                    height: 28px;
+                    line-height: 28px;
+                    text-align: right;
+                    display: block;
+
+                    .gray {
+                        cursor: default;
+                        color: #e1e1e6;
+                    }
+
+                    svg {
+                        display: inline-block;
+                        width: 12px;
+                        height: 16px;
+                        line-height: 24px;
+                        color: #333;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+
+                    .value {
+                        width: 36px;
+                        height: 28px;
+                        border-radius: 8px;
+                        background: #f5f6f8;
+                        color: #333;
+                        font-size: 14px;
+                        display: inline-block;
+                        vertical-align: top;
+                        text-align: center;
+
+                    }
+                }
+
+                .action {
+                    position: absolute;
+                    right: 4px;
+                    bottom: 0;
+                    font-size: 0;
+
+                    span {
+                        display: inline-block;
+                        cursor: pointer;
+                        position: relative;
+
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            line-height: 20px;
+                            text-align: center;
+                            color: #868686;
+
+                            &:hover {
+                                color: rgba(92, 92, 92);
+                            }
+                        }
+
+                        em {
+                            font-size: 13px;
+                            color: #333;
+                            white-space: nowrap;
+                            padding: 8px 12px;
+                            background: #fff;
+                            position: absolute;
+                            bottom: 30px;
+                            left: 50%;
+                            -webkit-transform: translateX(-50%);
+                            -ms-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                            -webkit-box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+                            box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+                            border-radius: 4px;
+                            display: none;
+                            z-index: 1;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 50%;
+                                bottom: -16px;
+                                margin-left: -8px;
+                                border: 8px solid rgba(0, 0, 0, 0);
+                                border-top-color: #fff;
+                                width: 0;
+                                height: 0;
+                                font-size: 0;
+                                line-height: 0;
+                            }
+                        }
+
+                        &:hover {
+                            -webkit-transition: .3s;
+                            transition: .3s;
+
+                            em {
+                                display: block;
+                                -webkit-animation: scaleBox .3s;
+                                animation: scaleBox .3s;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@keyframes scaleBox {
+    0% {
+        -webkit-transform: translateX(-50%) scale(0);
+        transform: translateX(-50%) scale(0);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+
+    100% {
+        -webkit-transform: translateX(-50%) scale(1);
+        transform: translateX(-50%) scale(1);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+}
+
+
+
+.accept {
+    &:after {
+        content: "";
+        margin-top: 16px;
+        display: block;
+        background: url(https://s.staticbg.com/web/src/img/shopcart/sprite.png?v=5627c23) no-repeat -554px -374px;
+        width: 276px;
+        height: 92px;
+    }
+}

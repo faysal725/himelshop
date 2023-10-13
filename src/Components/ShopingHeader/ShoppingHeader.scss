@@ -1,0 +1,41 @@
+.shoppingHeader {
+
+    background-color: #fff;
+
+    .headerLeft {
+        display: flex;
+        align-items: center;
+
+        .secure {
+            display: inline-block;
+            vertical-align: top;
+            color: #00a84f;
+            // margin: 0 46px;
+            position: relative;
+
+            svg {
+                font-size: 21px;
+                margin-right: 10px;
+            }
+
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     left: -23px;
+            //     top: 0;
+            //     width: 1px;
+            //     height: 24px;
+            //     background: #e1e1e6;
+            // }
+        }
+    }
+
+}
+
+.step-label {
+    >div {
+        >div {
+            margin-bottom: 19px !important;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixin/mixin';
+
+.parent-scroll {
+    border-bottom: 1px solid #ebedf0;
+    background: #fff;
+}
+
+.desktopNavs {
+
+    .container {
+        background: #fff;
+        padding: 0 10px;
+
+        .navbar {
+            .nav-link {
+                background: #fff;
+                border: none;
+                color: #333;
+                border-bottom: 2px solid transparent;
+                border-radius: 0;
+                padding: 15px 15px;
+            }
+
+            .active {
+                color: black;
+                border-bottom: 2px solid #000;
+                font-weight: 600;
+            }
+
+            padding: 0;
+        }
+
+
+    }
+
+    .productAction {
+        button {
+            position: relative;
+            display: block;
+            width: 120px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 42px;
+            margin-top: -11px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            button {
+                width: 100px;
+                height: 35px;
+                line-height: 36px;
+            }
+        }
+    }
+
+}
+
+.react-tabs__tab--selected {
+    background: #fff;
+    border: none;
+    color: black;
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.react-tabs__tab {
+    position: static;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.react-tabs__tab:focus {
+    box-shadow: none;
+    border-color: none;
+    outline: none;
+}
+
+.desktopNavs:parent {
+    background-color: red;
+}
+
+// a img:parent { background: none; }

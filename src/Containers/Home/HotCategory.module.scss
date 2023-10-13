@@ -1,0 +1,41 @@
+@import '../../assets/styles/mixin/mixin';
+
+.hotCategoryItem {
+    padding: 15px;
+    border-radius: 4px;
+    display: block;
+    @include transition;
+    height: 100%;
+
+    &:hover {
+        @include box-shadow;
+    }
+}
+
+.title {
+    color: #333;
+    text-transform: capitalize;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

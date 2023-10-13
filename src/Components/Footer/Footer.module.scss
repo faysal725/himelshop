@@ -1,0 +1,362 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin/mixin';
+
+/********* Footer top **********/
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 2px solid #eee;
+    padding-top: 40px;
+}
+
+.footerTopItem {
+    flex-basis: 200px;
+    text-align: center;
+    line-height: 18px;
+
+    h6 {
+        font-size: 14px;
+        line-height: 19px;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 0;
+
+        a {
+            color: #333;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    span {
+        margin-top: 2px;
+        font-size: 13px;
+        color: #999;
+        display: block;
+    }
+}
+
+.footerTopIcon {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+/*********** footer ***********/
+.footer {
+    background: #f5f6f8;
+    padding-top: 50px;
+}
+
+.footerLinks {
+    padding-bottom: 35px;
+}
+
+.footerTitle {
+    text-transform: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footerLinkItem {
+    color: #666;
+    display: block;
+    margin-bottom: 6px;
+    @include transition;
+    font-size: 13px;
+
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: #666;
+        color: #666;
+    }
+}
+
+.footerMember {}
+
+.footerDwn {
+    display: flex;
+}
+
+.footerDwnItem {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 18px;
+    margin-right: 15px;
+    @include transition;
+    @include flex-center;
+
+
+    &:hover {
+        color: #fff;
+        background-color: #000;
+
+    }
+}
+
+.qrCode {
+    width: 130px;
+    position: relative;
+    cursor: pointer;
+    @include transition;
+
+    .qrCodeImage {
+        z-index: 1;
+        -webkit-box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        position: absolute;
+        left: 50%;
+        display: none;
+        margin-left: -68px;
+        top: -2px;
+        background: #fff;
+        border-radius: 4px;
+        text-align: center;
+        padding: 12px 13px;
+        font-size: 0;
+        -webkit-animation: trans-menuup .2s ease-in-out;
+        animation: trans-menuup .2s ease-in-out;
+        -webkit-transition: -webkit-transform .2s;
+        transition: -webkit-transform .2s;
+        transition: transform .2s;
+        transition: transform .2s, -webkit-transform .2s;
+
+        p {
+            margin-top: 6px;
+            font-size: 13px;
+            line-height: 18px;
+            color: #333;
+            max-width: 110px;
+            white-space: normal;
+        }
+    }
+
+    &:hover {
+        .qrCodeImage {
+            display: block;
+            animation: fadeUp 0.5s;
+        }
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        top: 20px;
+    }
+
+    to {
+        top: -2px;
+    }
+}
+
+.qrCodeWrap {
+    height: 35px;
+    width: 130px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
+    .scan {
+        font-size: 18px;
+    }
+
+    span {
+        margin: 0 5px;
+    }
+}
+
+.paymentWith {
+    padding: 14px 0;
+    border-top: 1px solid #eee;
+}
+
+.socialIcons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socialItem {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 18px;
+    margin-right: 15px;
+    display: inline-block;
+    margin-bottom: 5px;
+    @include transition;
+    @include flex-center;
+
+
+    &:hover {
+        color: #fff;
+        background-color: #000;
+
+    }
+}
+
+.subs {
+    font-size: 13px;
+    line-height: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    a {
+        color: #666;
+        text-decoration: underline;
+
+        &:hover {
+            color: #666;
+        }
+    }
+}
+
+.emailSubs {
+    display: flex;
+
+    input {
+        border: none;
+        border-bottom: 2px solid #000;
+        width: 100%;
+        background: transparent;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        font-size: 22px;
+        margin-left: -25px;
+        @include transition;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.eCab {
+    width: 80px;
+}
+
+.copyRightSection {
+    background: #111;
+}
+
+.copyRight {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around;
+
+    p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        a {
+            color: #ef9721;
+
+            &:hover {
+                color: #ef9721;
+            }
+        }
+    }
+
+}
+
+/********** Footer Mobile Version ***********/
+.FooterMob {
+    background-color: #fff;
+    padding-top: 15px;
+}
+
+.backToTop {
+    text-align: center;
+    border-bottom: 1px solid #eae4e4;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #555;
+
+    h6 {
+        margin-bottom: 0;
+        height: 20px;
+
+        .upArrow {
+            font-size: 20px;
+            margin-top: -5px;
+        }
+    }
+}
+
+.banks {
+    display: flex;
+    margin-top: 10px;
+
+    .banksImage {
+        width: 100px;
+        margin-right: 8px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.footerMobLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 13px 0;
+
+    .footerMobLinkItem {
+        font-size: 13px;
+        color: #777676;
+        font-weight: 600;
+    }
+}
+
+.copyright {
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .footerDwnItem {
+        margin-right: 7px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

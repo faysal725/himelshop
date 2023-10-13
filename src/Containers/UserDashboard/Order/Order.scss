@@ -1,0 +1,104 @@
+.order-top-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f8f9fb;
+
+}
+
+.order-details {
+    margin-top: 15px;
+    border-radius: 5px;
+    background: #f8f9fb;
+    padding: 10px;
+    padding-bottom: 20px;
+
+    .step-details {
+        background: #e6e6ef;
+        border-radius: 8px;
+        padding: 10px;
+        color: #777;
+        font-size: 13px;
+
+        p {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+.product-list {
+    margin-top: 15px;
+    padding: 0 30px;
+
+    .product-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.shippingTips {
+    position: relative;
+    top: 2px;
+    margin: 0 8px;
+    cursor: pointer;
+    display: inline-block;
+
+    svg {
+
+        font-size: 17px;
+        margin-top: -7px;
+
+    }
+
+    .message {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        min-width: 220px;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background: #fff;
+        -webkit-box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+        box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+        border: 1px solid #ebedf0;
+        border-radius: 4px;
+        font-size: 13px;
+        color: #333;
+        padding: 9px;
+        z-index: 9;
+        font-style: normal;
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            margin-left: -10px;
+            font-size: 0;
+            width: 0;
+            height: 0;
+            line-height: 0;
+            border: 10px solid rgba(0, 0, 0, 0);
+            border-bottom-color: #ebedf0;
+        }
+
+        &::after {
+            border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+            top: -19px;
+        }
+    }
+
+    &:hover {
+        .message {
+            display: block;
+        }
+    }
+}

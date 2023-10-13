@@ -1,0 +1,137 @@
+@import '../../../../../assets/styles/variables';
+
+.product {
+    text-decoration: none;
+    color: #656d78;
+}
+
+.productImg {
+    padding: 18px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    color: #656d78;
+    text-decoration: none;
+    outline: none;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .04);
+        border-radius: 4px;
+        -webkit-transition: background .3s;
+        transition: background .3s;
+    }
+
+    &:hover::after {
+        background: rgba(0, 0, 0, .08);
+        -webkit-transition: background .3s;
+        transition: background .3s;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+.productPrice {
+    display: flex;
+    padding: 3px 3px;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+
+    .price {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .previousPrice {
+        font-size: 10px;
+        text-decoration: line-through;
+        color: #999;
+    }
+
+}
+
+.coupon {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffe7dc), to(#fff));
+    background: linear-gradient(180deg, #ffe7dc, #fff);
+    height: 100%;
+    display: block;
+
+    p {
+        color: #212121;
+        font-weight: 600;
+        font-size: 13px;
+        margin-top: 15px;
+
+
+        strong {
+            display: block;
+            color: #ff4633;
+        }
+    }
+
+    span {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        min-width: 1.893rem;
+        font-size: 13px;
+        font-weight: 700;
+        color: #ff4633;
+        border: 0.027rem solid #ff4633;
+        transform: translateX(-50%);
+        padding: 3px 8px;
+        border-radius: 5px;
+    }
+}
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {
+    .productImg {
+        padding: 3px;
+    }
+
+    .productPrice {
+        display: block;
+        text-align: center;
+
+        .price {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .productPrice {
+        display: block;
+        text-align: center;
+
+        .price {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

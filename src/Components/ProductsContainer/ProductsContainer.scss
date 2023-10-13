@@ -1,0 +1,37 @@
+.ProductsContainer {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+
+    &:hover {
+        -webkit-box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+        box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+    }
+}
+
+/******* Responsive ********/
+
+@media (max-width: 575.98px) {
+    .ProductsContainer {
+        padding: 15px 8px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .ProductsContainer {
+        padding: 15px 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

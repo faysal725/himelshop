@@ -1,0 +1,41 @@
+@import '../../../../assets/styles/variables';
+
+
+.categoryBrands {
+
+    ul {
+        li {
+            display: inline-block;
+            width: 80px;
+            height: 42px;
+            border-radius: 4px;
+            border: 1px solid #ebebf0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0 8px 8px 0;
+            text-align: center;
+            vertical-align: top;
+
+            &:hover {
+                border: 2px solid $primary;
+
+            }
+
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+
+            img {
+                max-height: 28px;
+                position: relative;
+                top: 35%;
+                margin-top: -14px;
+                width: 100%;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,126 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin/mixin';
+
+.flashWrapper {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 15px;
+    // display: none;
+
+    &:hover {
+        -webkit-box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+        box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+    }
+}
+
+.flash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #3333331a;
+    margin-bottom: 15px;
+
+}
+
+.flashSale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h5 {
+        margin-bottom: 0;
+    }
+
+    .flashIcon {
+        font-size: 30px;
+        margin-top: -5px;
+        color: #f57f17;
+    }
+}
+
+.flashTitleTime {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+
+    .flashTitleTimeItem {
+        font-size: 11px;
+        color: #fff;
+        height: 20px;
+        width: 20px;
+        border-radius: 3px;
+        background: #000;
+        @include flex-center;
+    }
+}
+
+.flashSeeMore {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7b7b7b;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    .flashSeeMoreIcon {
+        height: 18px;
+        width: 18px;
+        border: 1px solid;
+        border-radius: 50%;
+        margin-left: 3px;
+
+    }
+
+    &:hover {
+        color: $primary;
+
+        .flashSeeMoreIcon {
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+}
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .flashWrapper {
+        padding: 15px;
+    }
+
+    .flashTimes {
+        margin-left: 35px;
+    }
+
+    .flashTimes {
+        .flashTimeOption {
+            width: 49px;
+            padding: 3px;
+            line-height: 17px;
+
+            span {
+                font-size: 11px;
+            }
+
+            span:nth-child(2) {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

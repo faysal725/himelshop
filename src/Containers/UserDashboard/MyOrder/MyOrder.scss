@@ -1,0 +1,23 @@
+.all {}
+
+.order-top-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 10px;
+    background: #f8f9fb;
+    border-bottom: 2px solid rgb(197, 196, 196);
+}
+
+.product-list {
+    margin-top: 15px;
+    padding: 10px;
+
+    .product-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

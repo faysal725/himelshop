@@ -1,0 +1,83 @@
+#desktopQna {
+    padding: 1.5rem;
+}
+
+.customerQA {
+    color: rgb(138, 132, 132);
+}
+
+.inputBox {
+    height: 40px;
+    display: flex;
+
+    input {
+        width: 80%;
+        height: 100%;
+        border: 2px solid #707070;
+        outline: none;
+        padding: 5px;
+    }
+
+    button {
+        width: 50px;
+        font-size: 20px;
+        border: none;
+        background: #f25f1f;
+        color: #fff;
+        margin-left: -5px;
+    }
+}
+
+.customerQAInput {
+    width: 80%;
+}
+
+.findYourQuestion {
+    display: flex;
+    align-items: center;
+    margin-top: 20px
+}
+
+
+.customerBtn {
+    background: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    color: #050404;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.upDownBtn {
+    display: block;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.questionItem {
+    .question {
+        display: flex;
+
+        strong {
+            width: 40px;
+        }
+
+        span {
+            color: rgb(253, 40, 40);
+        }
+    }
+
+    .answer {
+        margin-top: 15px;
+        display: flex;
+
+        strong {
+            width: 40px;
+        }
+    }
+}

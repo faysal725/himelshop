@@ -1,0 +1,179 @@
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: block;
+    overflow-y: auto;
+    color: #333;
+    background: no-repeat 50% rgba(0, 0, 0, .5);
+
+
+    &-content {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        word-break: break-all;
+        border-radius: 2px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        width: 424px;
+        height: 500px;
+        margin-left: -210px;
+        background: url(https://s.staticbg.com/web/src/img/indexnewest/newuser_coupon.png?v=9e22c48) no-repeat;
+        background-size: 100% 100%;
+
+        .modal-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            pointer-events: auto;
+            background-color: transparent;
+            background-clip: padding-box;
+            border: none;
+            border-radius: 0.3rem;
+            outline: 0;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1px;
+            right: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            z-index: 1;
+            color: #fff;
+            border: 50%;
+            background-color: transparent;
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-wrap {
+            height: 353px;
+            padding-top: 112px;
+            margin: 35px 13px 0 12px;
+            cursor: pointer;
+        }
+
+        .content-body {
+            padding: 19px 24px 24px;
+            background: #fff;
+
+            &-title {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 33px;
+                color: rgba(0, 0, 0, .87);
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .subtitle {
+                margin-top: 2px;
+                font-size: 14px;
+                line-height: 19px;
+                color: rgba(0, 0, 0, .87);
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+
+            .offer {
+                position: relative;
+                width: 344px;
+                height: 80px;
+                padding-left: 153px;
+                background: -webkit-gradient(linear, left top, right top, from(#fff1eb), to(#fff7eb));
+                background: linear-gradient(90deg, #fff1eb, #fff7eb);
+                border-radius: 8px;
+                overflow: hidden;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 113px;
+                    width: 0;
+                    height: 56px;
+                    border-left: 1px dashed rgba(0, 0, 0, .0784314);
+                    margin-top: -28px;
+                }
+
+                .icon {
+                    position: absolute;
+                    top: 8px;
+                    left: 24px;
+                }
+
+                .text {
+                    font-weight: 700;
+                    text-align: left;
+                    font-size: 24px;
+                    line-height: 33px;
+                    color: #ff5900;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    line-height: 80px;
+                }
+            }
+
+
+
+            .free-gifts {
+                margin-top: 16px;
+
+                .sprite-ic_allowance {
+                    background: url(https://s.staticbg.com/web/src/img/indexnewest/sprite.png?v=4dfa273) no-repeat -254px -164px;
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+
+            .sprite-ic_free {
+                background: url(https://s.staticbg.com/web/src/img/indexnewest/sprite.png?v=4dfa273) no-repeat -254px -164px;
+                width: 64px;
+                height: 64px;
+            }
+
+            .order-over {
+                font-size: 14px;
+                line-height: 19px;
+                text-align: left;
+                color: #ff5900;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .use-it-button {
+                width: 344px;
+                height: 46px;
+                margin: 20px auto 0;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 46px;
+                color: #fff;
+                border-radius: 4px;
+                background: -webkit-gradient(linear, left top, right top, from(#ff6e26), to(#ff4633));
+                background: linear-gradient(90deg, #ff6e26, #ff4633);
+                cursor: pointer;
+            }
+        }
+    }
+}

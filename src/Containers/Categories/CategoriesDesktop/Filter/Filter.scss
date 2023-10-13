@@ -1,0 +1,45 @@
+.filter {
+
+    ul {
+        li {
+            height: auto;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+            span {
+                display: block;
+                color: #666;
+                font-size: 13px;
+                padding: 0 8px 0 24px;
+                position: relative;
+                height: auto;
+                line-height: 28px;
+                cursor: pointer;
+
+                input {
+                    width: 18px;
+                    height: 18px;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    text-align: center;
+                    line-height: 16px;
+                }
+
+                i {
+                    color: #999;
+                    font-style: normal;
+                }
+
+                &:hover {
+                    input {
+                        border: 1px solid #ffa666 !important;
+                    }
+                }
+            }
+        }
+    }
+}

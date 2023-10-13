@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import "./variables";
+@import "./common";
+@import "./mixin/mixin";
+@import "./global";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: unset !important;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    background: #f5f6f8;
+    font-size: 14px;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: #96918c;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+
+
+.no-scroll {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.form-check-input {
+    &:checked {
+        background-color: $primary;
+        border-color: $primary
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: $primary;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select {
+    color: #6c757d;
+
+    &:focus {
+        border-color: #86b7fe;
+        outline: 0;
+        border-color: $primary;
+        box-shadow: none;
+    }
+}
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {
+    #root {
+        margin-top: 53px;
+        margin-bottom: 43px;
+    }
+
+    .Spinner {
+        @include flex-center;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .spinnerWrap {
+        height: 80px;
+        width: 107px;
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+
+        .spinner-border {
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #root {
+        margin-top: 53px;
+        margin-bottom: 43px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1160px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1280px;
+    }
+
+
+}
+
+@media (min-width: 1600px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1480px;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

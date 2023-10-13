@@ -1,0 +1,129 @@
+@import '../../assets/styles/variables';
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 11px;
+}
+
+.titleName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .titleIcon {
+        font-size: 25px;
+        margin-top: -5px;
+        color: $primary;
+        margin-right: 6px;
+    }
+
+    .subTitle {
+        font-size: 15px;
+    }
+
+}
+
+.titleSeeMore {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7b7b7b;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    .titleSeeMoreIcon {
+        height: 18px;
+        width: 18px;
+        border: 1px solid;
+        border-radius: 50%;
+        margin-left: 3px;
+
+    }
+
+    &:hover {
+        color: $primary;
+
+        .titleSeeMoreIcon {
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+}
+
+/********** Responsive ***********/
+@media (max-width: 575.98px) {
+    .titleName {
+        h5 {
+            font-size: 15px;
+        }
+
+        .titleIcon {
+            font-size: 21px;
+            margin-right: 2px;
+        }
+
+        .subTitle {
+            font-size: 9px;
+        }
+    }
+
+    .titleSeeMore {
+        margin-top: -5px;
+
+        span {
+            font-size: 13px;
+        }
+
+        .titleSeeMoreIcon {
+            height: 15px;
+            width: 15px;
+            margin-left: 5px;
+            margin-top: -2px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .titleName {
+        h5 {
+            font-size: 16px;
+        }
+
+        .titleIcon {
+            font-size: 21px;
+            margin-right: 4px;
+        }
+
+        .subTitle {
+            font-size: 10px;
+        }
+    }
+
+    .titleSeeMore {
+        margin-top: -5px;
+
+        span {
+            font-size: 13px;
+        }
+
+        .titleSeeMoreIcon {
+            height: 15px;
+            width: 15px;
+            margin-left: 5px;
+            margin-top: -2px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}

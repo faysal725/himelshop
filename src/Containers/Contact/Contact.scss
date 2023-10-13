@@ -1,0 +1,42 @@
+.contactItem {
+    background-color: #fff;
+    box-shadow: 0 3px 0 0 #f1f1f1;
+    border: 1px solid #929292;
+    cursor: pointer;
+    display: block;
+    padding: 15px 10px 15px 20px;
+    text-decoration: none;
+    word-break: break-word;
+
+    .contactTitle {
+        line-height: 28px;
+        color: #1a9cb7;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        img {
+            width: 24px;
+            height: 16px;
+        }
+    }
+
+    .contactContent {
+        color: #606060;
+        margin-top: 8px;
+        line-height: 19px;
+        font-size: 14px;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+
+.contact-us-btn {
+    height: 40px;
+    color: #fff;
+    margin-top: 15px;
+    width: 200px;
+}

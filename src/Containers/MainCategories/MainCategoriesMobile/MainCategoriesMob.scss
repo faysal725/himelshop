@@ -1,0 +1,105 @@
+.mainCategoriesMob {
+    background: #fff;
+    overflow-x: hidden;
+    margin-top: -8px;
+    height: 100%;
+
+
+    .nav-pills {
+        height: 85vh;
+        flex-direction: row !important;
+        width: inherit;
+        overflow: auto;
+        position: fixed;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        .nav-item {
+            width: 100%;
+
+            .nav-link {
+                border-left: 3px solid transparent;
+                background: #f7f8fa;
+                height: 76px;
+                padding: 0 !important;
+                border-bottom: 1px solid #f1f1f1;
+                border-radius: 0px !important;
+
+            }
+
+            .nav-link.active {
+                color: #333;
+                background-color: #fff !important;
+                border-left: 3px solid #ff761b !important;
+                border-radius: 0px !important;
+            }
+        }
+
+
+    }
+
+
+
+}
+
+.mobCategoryItem {
+    text-align: center;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    img {
+        width: 25px;
+        display: block;
+        margin: auto;
+    }
+
+    span {
+        display: -webkit-box;
+        padding: 0 .333rem;
+        overflow: hidden;
+        font-size: 10px;
+        font-weight: 300;
+        color: #000;
+        text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}
+
+.mobCategoriesList {
+    .mobCategoriesItem {
+        &:first-child {
+            .mobCategoriesTitle {
+                border: none;
+            }
+        }
+    }
+
+    .mobCategoriesTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        padding-right: 15px;
+        border-top: 1px solid #f2f3f5;
+
+        a {
+            font-size: 13px;
+            margin-bottom: 0;
+            font-weight: 700;
+            color: #333;
+        }
+
+        svg {
+            color: gray;
+            font-size: 12px;
+        }
+    }
+}

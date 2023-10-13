@@ -1,0 +1,14 @@
+.my-balance {
+    border: 2px solid #f0971f;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #f9f9f9;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+
+    .amount {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

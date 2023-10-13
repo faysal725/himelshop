@@ -1,0 +1,152 @@
+[
+    {
+        "id": "1",
+        "title": "Feature",
+        "collapse": true,
+        "filter": [
+            {
+                "id": "1",
+                "name": "Built-in Bluetooth",
+                "total": 812
+            },
+            {
+                "id": "2",
+                "name": "with microphone",
+                "total": 786
+            },
+            {
+                "id": "3",
+                "name": "Lightweight",
+                "total": 766
+            },
+            {
+                "id": "4",
+                "name": "Music Control ",
+                "total": 644
+            },
+            {
+                "id": "5",
+                "name": "Waterproof",
+                "total": 545
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Materials",
+        "collapse": true,
+        "filter": [
+            {
+                "id": "1",
+                "name": "Metal",
+                "total": 792
+            },
+            {
+                "id": "2",
+                "name": "Plastic",
+                "total": 547
+            },
+            {
+                "id": "3",
+                "name": "Ceramic",
+                "total": 131
+            },
+            {
+                "id": "4",
+                "name": "Silicone/Resin ",
+                "total": 644
+            },
+            {
+                "id": "5",
+                "name": "Silica Gel",
+                "total": 545
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Application",
+        "collapse": true,
+        "filter": [
+            {
+                "id": "1",
+                "name": "Metal",
+                "total": 792
+            },
+            {
+                "id": "2",
+                "name": "Plastic",
+                "total": 547
+            },
+            {
+                "id": "3",
+                "name": "Ceramic",
+                "total": 131
+            },
+            {
+                "id": "4",
+                "name": "Silicone/Resin ",
+                "total": 644
+            },
+            {
+                "id": "5",
+                "name": "Silica Gel",
+                "total": 545
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Protocals",
+        "collapse": false,
+        "filter": [
+            {
+                "id": "1",
+                "name": "Metal",
+                "total": 792
+            },
+            {
+                "id": "2",
+                "name": "Plastic",
+                "total": 547
+            },
+            {
+                "id": "3",
+                "name": "Ceramic",
+                "total": 131
+            },
+            {
+                "id": "4",
+                "name": "Silicone/Resin ",
+                "total": 644
+            },
+            {
+                "id": "5",
+                "name": "Silica Gel",
+                "total": 545
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "title": "Types",
+        "collapse": false,
+        "filter": [
+            {
+                "id": "1",
+                "name": "Metal",
+                "total": 792
+            },
+            {
+                "id": "2",
+                "name": "Plastic",
+                "total": 547
+            },
+            {
+                "id": "3",
+                "name": "Ceramic",
+                "total": 131
+            }
+        ]
+    }
+]

@@ -1,0 +1,231 @@
+@import '../../../assets/styles/mixin/mixin';
+
+.filterSection {
+    position: fixed;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 97;
+    @include flex;
+    background-color: #fff;
+    height: 32px;
+    line-height: 31px;
+    top: 50px;
+    font-size: 11px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    overflow: hidden;
+
+
+}
+
+
+.categoriesMobWrapper {
+
+    .filterSection {
+        .dropdown {
+            position: static;
+
+            .dropdown-menu {
+                left: 0 !important;
+                right: 0px !important;
+                top: -1px !important;
+                border: none;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+    }
+
+    .filterSection.hidden~.sibling {
+        .add-space {
+            padding-top: 10px;
+        }
+    }
+
+    .filterSection~.sibling {
+        .add-space {
+            padding-top: 40px;
+        }
+    }
+
+}
+
+.sidebarWrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .menu-btn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 2.8rem;
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+        width: 100%;
+
+        button {
+            width: 50%;
+            height: 100%;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            background: #fa0;
+            border: none;
+
+            &:last-child {
+                background: -webkit-gradient(linear, left top, right top, from(#ff6e26), to(#ff4633));
+                background: linear-gradient(90deg, #ff6e26, #ff4633);
+            }
+        }
+
+    }
+}
+
+.sidebarFilerWrapper {
+    padding: 8px;
+
+    .sidebarFilterTitle {
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        svg {
+            color: gray;
+            font-size: 14px;
+        }
+    }
+
+    .sidebarFilters {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+
+        .item {
+            width: 45%;
+            height: 30px;
+            padding: 5px;
+            margin: 4px 3px;
+            overflow: hidden;
+            font-size: 11px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.87);
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            background-color: #f3f3f3;
+            border: 0.027rem solid #f3f3f3;
+            border-radius: 0.213rem;
+        }
+    }
+}
+
+
+.hidden {
+    -webkit-transition: all .15s;
+    transition: all .15s;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+}
+
+.sort {
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0 .32rem;
+    color: rgba(0, 0, 0, .87);
+    @include flex;
+    align-items: center;
+
+    &-text {
+        position: relative;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 700;
+
+        &::after {
+
+            position: absolute;
+            top: 23px;
+            left: 50%;
+            width: 13px;
+            height: 4px;
+            content: "";
+            background: #ff6e26;
+            border-radius: 7px;
+            transform: translateX(-50%);
+
+        }
+    }
+
+    svg {
+        font-size: 17px;
+    }
+}
+
+.price {
+    width: 60px;
+    display: flex;
+    padding-left: 4px;
+
+    .arrows {
+        height: 25px;
+        margin: auto 0;
+
+        svg {
+            display: block;
+            font-size: 14px;
+            margin-left: 2px;
+
+            &:last-child {
+                margin-top: -5px;
+            }
+        }
+    }
+}
+
+.store {
+    position: relative;
+    width: 100%;
+    padding: 0 .427rem;
+    text-align: right;
+
+    svg {
+        font-size: 20px;
+    }
+}
+
+.filter {
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0 .7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-left: 1px solid #eee;
+
+    svg {
+        font-size: 17px;
+        color: #3d3d3d;
+        margin-right: 3px;
+    }
+}

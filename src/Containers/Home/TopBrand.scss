@@ -1,0 +1,14 @@
+.topBrandWrapper {
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 17px;
+        font-weight: 900;
+        width: 30px;
+        color: #333;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
